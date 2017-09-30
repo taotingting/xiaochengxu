@@ -1,0 +1,48 @@
+/**index.wxss**/
+.header {
+  background: #fff;
+  border-bottom: 4rpx dashed #F3F3F3;
+}
+
+
+.header .weui-media-box::before {
+  content: none;
+}
+.header .weui-media-box__title {
+  margin-top: -20rpx;
+}
+
+.ebl {
+  background: #fff;
+}
+.ebl .ic {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.pic{
+  padding:10px 5px;
+}
+.pic-icon{
+  width:90px;
+  height:130px;
+  display:block;
+  padding: 5px 5px;
+}
+.weui-flex__item {
+  -webkit-box-flex:0 0 auto;
+  -webkit-flex:0 0 auto;
+  flex:0 0 auto;
+}
+
+.weui-media-box__thumb{
+  border-radius:50%;
+}
+.weui-cell::before{
+  border:none;
+}
+.weui-cell__bd{
+  overflow: hidden;
+
+}

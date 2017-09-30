@@ -1,0 +1,66 @@
+
+<!--主体-->
+<view class="page__bd">
+  <!--头部名称 start-->
+  <view class="header">
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_appmsg">
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{ name }}</view>
+          <view class="weui-media-box__desc">{{ shop }}</view>
+        </view>
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="../../images/logo.jpg" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--头部名称 end-->
+  <!--文本栏 start-->
+  <view class="weui-cells weui-cells_after-title" class="ebl">
+      <view class="weui-cell"  bindtap="seeMap">
+          <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+              <image src="../../images/address.png" class="ic"/>
+          </view>
+          <view class="weui-cell__bd">
+              <view style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ address }}</view>
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+      <view class="weui-cell">
+          <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+              <image src="../../images/time.png" class="ic"/>
+          </view>
+          <view class="weui-cell__bd">
+              <view>{{ time }}</view>
+          </view>
+          <!-- <view class="weui-cell__ft weui-cell__ft_in-access"></view> -->
+      </view>
+      <view class="weui-cell"  bindtap="tapCall">
+          <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+              <image src="../../images/tel.png" class="ic"/>
+          </view>
+          <view class="weui-cell__bd">
+              <view>{{ tel }}</view>
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+      <view class="weui-cell">
+          <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+              <image src="../../images/pic.png" class="ic"/>
+          </view>
+          <view class="weui-cell__bd">
+              <view>{{ pic }}</view>
+          </view>
+      </view>
+      <view class="pic">
+        <view class="page__bd page__bd_spacing">
+          <view class="weui-flex" style="flex-wrap: wrap;">  
+              <view  wx:for="{{imgalist}}" wx:for-item="image" class="weui-flex__item"><view class="placeholder"><image  src="{{image}}" data-src="{{image}}" bindtap="previewImage" class="pic-icon"/></view></view>
+          </view>
+        </view>
+      </view>
+
+  </view>
+  <!--文本栏 end-->
+</view>
